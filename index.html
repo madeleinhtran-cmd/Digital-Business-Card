@@ -146,6 +146,7 @@
       color: #758092;
       font-size: 11px;
       margin-top: 24px;
+      letter-spacing: .03em;
     }
 
     .footline {
@@ -176,14 +177,16 @@
   <main class="card">
 
     <header class="hero">
-    
-<img
-  class="headshot"
-  src="https://madeleinhtran-cmd.github.io/Digital-Business-Card/headshot.PNG?v=4"
-  alt="Professional headshot of Madelein Tran"
-  width="116"
-  height="116"
->
+
+      <!-- PROFESSIONAL HEADSHOT -->
+      <img
+        class="headshot"
+        src="https://madeleinhtran-cmd.github.io/Digital-Business-Card/headshot.PNG?v=4"
+        alt="Professional headshot of Madelein Tran"
+        width="116"
+        height="116"
+      >
+
       <h1>Madelein Tran, BS, MBA</h1>
 
       <div class="role">
@@ -197,6 +200,7 @@
       <p class="focus">
         Supply Chain · Data &amp; AI · Business Transformation
       </p>
+
     </header>
 
     <section class="body">
@@ -245,15 +249,17 @@
 
       </nav>
 
-    <footer class="footer">
-  <div class="footline"></div>
-  Designed &amp; Developed by Madelein Tran
-</footer>
+      <!-- PERSONAL DEVELOPMENT CREDIT -->
+      <footer class="footer">
+        <div class="footline"></div>
+        Designed &amp; Developed by Madelein Tran
+      </footer>
 
     </section>
   </main>
 
   <script>
+    // CONTACT INFORMATION
     const FULL_NAME = 'Madelein Tran, BS, MBA';
     const COMPANY = 'Williams Companies';
     const TITLE = 'Business Process Analyst III';
@@ -261,6 +267,7 @@
     const CONTACT_EMAIL = 'Madeleinhtran@gmail.com';
     const LINKEDIN = 'https://www.linkedin.com/in/madeleintran';
 
+    // VCARD FORMATTING
     function vcfEscape(s) {
       return s
         .replace(/\\/g, '\\\\')
@@ -269,6 +276,7 @@
         .replace(/;/g, '\\;');
     }
 
+    // SAVE CONTACT BUTTON
     document.getElementById('save').addEventListener(
       'click',
       function(e) {
